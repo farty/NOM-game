@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ratator : MonoBehaviour
 {
     public float rSpeed = 0.3f;
 
 	void Update () {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        var moveHorizontal = Input.GetAxisRaw("Horizontal");
+        var moveVertical = Input.GetAxisRaw("Vertical");
+        Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
         if (movement != Vector3.zero)
-        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), rSpeed);
-        }
     }
 }

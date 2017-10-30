@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Mavement : MonoBehaviour
 {
@@ -9,16 +7,15 @@ public class Mavement : MonoBehaviour
 
     void FixedUpdate()
     {
-
         ControllPlayer();
     }
 
 
     void ControllPlayer()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        var moveHorizontal = Input.GetAxisRaw("Horizontal");
+        var moveVertical = Input.GetAxisRaw("Vertical");
+        Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
     }
 }
