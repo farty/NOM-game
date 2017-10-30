@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof (PlayerMotor))]
 public class PlayerControler : MonoBehaviour {
@@ -15,12 +13,12 @@ public class PlayerControler : MonoBehaviour {
     }
 	
 	void FixedUpdate () { 
-        float xMov = Input.GetAxisRaw("Horizontal");
-        float zMov = Input.GetAxisRaw("Vertical");
+        var xMov = Input.GetAxisRaw("Horizontal");
+        var zMov = Input.GetAxisRaw("Vertical");
 
-        Vector3 MovHor = transform.right*xMov;
-        Vector3 MovVert = transform.forward*zMov;
-        Vector3 velocity = ((MovHor+MovVert).normalized*speed);
+        var MovHor = transform.right*xMov;
+        var MovVert = transform.forward*zMov;
+        var velocity = ((MovHor+MovVert).normalized*speed);
 
         motor.Move(velocity);
 
