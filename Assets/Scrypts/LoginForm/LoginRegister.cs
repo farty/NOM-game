@@ -32,6 +32,7 @@ public class LoginRegister : MonoBehaviour {
     private IEnumerator WebAction(string action)
     {
         var url = UrlHelper.ConstructUrl(action, _loginInput.text, _passwordInput.text);
+        var username = _loginInput.text;
         var request = new WWW(url);
         _loginInput.text = "";
         _passwordInput.text = "";
@@ -47,7 +48,7 @@ public class LoginRegister : MonoBehaviour {
             {
                 ResultTextBox.SetResultMessage("Login Succesful!",true);
                 yield return new WaitForSeconds(5);
-                //TODO: Implement hook for main scene that passes username.
+                PlayerPrefs.SetString("Username", username);
                 SceneManager.LoadScene(21);
             }
             if(request.text.Trim() == "Wrong"|| request.text.Trim() == "No User")
