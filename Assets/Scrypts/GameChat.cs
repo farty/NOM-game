@@ -39,7 +39,7 @@ public class GameChat : Photon.MonoBehaviour {
             {
                 if (!string.IsNullOrEmpty(_messageText))
                 {
-                    SendChatMessage(PhotonNetwork.player.customProperties["name"] + ": " + _messageText);
+                    //SendChatMessage(PhotonNetwork.player.customProperties["name"] + ": " + _messageText);
                 }
 
                 _messageText = "";
