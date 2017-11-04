@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
-    [SerializeField]
+    
     public Transform CursorPosition;
     public Transform PlayerPosition;
     public float f = 0.5f;
