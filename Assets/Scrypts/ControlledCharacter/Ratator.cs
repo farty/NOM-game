@@ -24,3 +24,5 @@ public class Ratator : Photon.MonoBehaviour
 	
 	}
 }
+
+// не синхронизируется поворот

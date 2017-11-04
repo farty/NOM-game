@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 
-public class CursorControl : MonoBehaviour {
+public class CursorControl : Photon.MonoBehaviour {
 
-	void Update () {
+	void FixedUpdate () {
+		//if (photonView.isMine) {
         RaycastHit hit;
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
         {
-            transform.position = hit.point;
-        }
+			
+				transform.position = hit.point;
+			//} тоже самое что и с камера мув
+		}
+
     }
 }
