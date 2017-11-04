@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestyChat.unity
-    guid: fdaf95a2f61c1d84f8576b84fdba5134
-  - enabled: 1
-    path: Assets/Scenes/Test.unity
-    guid: f792d59007a93104c87742bbe65a9fcf
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 20e32d5abb3ea234baf7fa460cc6bbc2
-  - enabled: 1
     path: Assets/Scenes/Name of Mars.unity
     guid: c001ffc6a326f1a4fb445197462b0753
+  - enabled: 0
+    path: Assets/Scenes/Test.unity
+    guid: f792d59007a93104c87742bbe65a9fcf
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

@@ -1,10 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Photonchick : Photon.MonoBehaviour {
-    GameObject Player;
-	void Start () {
+
+    void Start () {
         PhotonNetwork.ConnectUsingSettings("0.1");
 	}
 	
