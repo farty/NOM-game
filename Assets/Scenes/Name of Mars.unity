@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 1008791528}
   - component: {fileID: 1008791527}
   m_Layer: 0
-  m_Name: CONNECTIONE!
+  m_Name: PhotonNetwork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
